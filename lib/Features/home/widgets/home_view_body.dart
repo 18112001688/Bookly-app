@@ -1,6 +1,5 @@
 import 'package:bookly_app/Features/home/widgets/coustem_app_bar.dart';
-import 'package:bookly_app/Features/home/widgets/coustem_list_view_item.dart';
-import 'package:bookly_app/core/assets.dart';
+import 'package:bookly_app/Features/home/widgets/featured_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -9,10 +8,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        CoustemAppBar(),
-        CoustemListViewItem(),
-      ],
+      children: const [CoustemAppBar(), FeaturedBooksListView()],
     );
   }
 }
