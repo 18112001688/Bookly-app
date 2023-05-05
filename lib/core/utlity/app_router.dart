@@ -6,6 +6,7 @@ import 'package:bookly_app/Features/splash/presentation/views/splashview.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
+  static String kSearchView = '/SearchView';
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -21,7 +22,7 @@ abstract class AppRouter {
         builder: (context, state) => const BookDetailsView(),
       ),
       GoRoute(
-        path: '/SearchView',
+        path: kSearchView,
         builder: (context, state) => const SearchView(),
       ),
     ],
