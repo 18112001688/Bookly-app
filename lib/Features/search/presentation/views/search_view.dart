@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/home/widgets/book_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/search_view_body.dart';
