@@ -22,9 +22,9 @@ class ServerFilauire extends Failure {
         return ServerFilauire('bad Certificate with apiServer');
 
       case DioErrorType.badResponse:
-        ServerFilauire.fromResponse(
+        return ServerFilauire.fromResponse(
             dioError.response!.statusCode!, dioError.response);
-        break;
+
       case DioErrorType.cancel:
         return ServerFilauire('Request to api server is canceled');
 
@@ -50,7 +50,7 @@ class ServerFilauire extends Failure {
     } else if (statusCode == 404) {
       return ServerFilauire('Your Request Not Found, please try again later');
     } else if (statusCode == 500) {
-      return ServerFilauire('Internal Server error, Please try agein late');
+      return ServerFilauire('Internal Server error, Please try agein later');
     } else {
       return ServerFilauire('Opps, There was an error');
     }
