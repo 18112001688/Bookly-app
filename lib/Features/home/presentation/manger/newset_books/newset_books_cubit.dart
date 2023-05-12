@@ -10,7 +10,7 @@ class NewsetBooksCubit extends Cubit<NewsetBooksState> {
 
   final HomeRepo homeRepo;
 
-  Future fetchNewsetBooks() async {
+  Future<void> fetchNewsetBooks() async {
     emit(NewsetBooksLoading());
     var result = await homeRepo.fetchNewsetBooks();
     // fold is mehod inside the either class return the two (Left and right)
