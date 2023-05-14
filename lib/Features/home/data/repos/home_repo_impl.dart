@@ -14,7 +14,7 @@ class HomeRepoImp implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchNewsetBooks() async {
     try {
       var data = await apiService.get(
-          endPoint: 'volumes?Sorting=newest&q=subject:Life');
+          endPoint: 'volumes?Sorting=newest&q=subject:chess');
 
       // parse the data that comes from the api to are books empty list
       List<BookModel> books = [];
@@ -35,8 +35,7 @@ class HomeRepoImp implements HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>> fetchFeatureBooks() async {
     try {
-      var data =
-          await apiService.get(endPoint: 'volumes?q=subject:programming');
+      var data = await apiService.get(endPoint: 'volumes?q=subject:chess');
       // parse the data that comes from the api to are books empty list
       List<BookModel> books = [];
       for (var item in data['items']) {

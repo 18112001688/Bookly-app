@@ -9,7 +9,7 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(slivers: [
+    return CustomScrollView(physics: const BouncingScrollPhysics(), slivers: [
       SliverToBoxAdapter(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +29,7 @@ class HomeViewBody extends StatelessWidget {
               horizontal: 30,
             ),
             child: Text(
-              'Best Seller',
+              'Newset Books',
               style: Styles.textStyle18,
             ),
           ),
