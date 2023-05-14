@@ -35,7 +35,8 @@ class HomeRepoImp implements HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>> fetchFeatureBooks() async {
     try {
-      var data = await apiService.get(endPoint: 'volumes?q=subject:cinema');
+      var data =
+          await apiService.get(endPoint: 'volumes?q=subject:programming');
       // parse the data that comes from the api to are books empty list
       List<BookModel> books = [];
       for (var item in data['items']) {
