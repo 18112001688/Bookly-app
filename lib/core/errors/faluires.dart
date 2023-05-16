@@ -32,8 +32,10 @@ class ServerFilauire extends Failure {
         return ServerFilauire('connection Error with apiServer');
 
       case DioErrorType.unknown:
-        if (dioError.message!.contains('SocketException')) {
-          ServerFilauire('No internet connection');
+        if (dioError.message != null &&
+            dioError.message!.contains('SocketException')) {
+          // Handle SocketException here
+          return ServerFilauire('no internet connection occurred');
         }
         break;
 
