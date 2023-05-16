@@ -14,7 +14,7 @@ class HomeRepoImp implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchNewsetBooks() async {
     try {
       var data = await apiService.get(
-          endPoint: 'volumes?Sorting=newest&q=subject:chess');
+          endPoint: 'volumes?Sorting=newest&q=subject:chess courses');
 
       // parse the data that comes from the api to are books empty list
       List<BookModel> books = [];
