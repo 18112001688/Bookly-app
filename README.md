@@ -1,16 +1,11 @@
-# bookly_app
+# BooklyApp
 
-A new Flutter project.
+BooklyApp is a simple application designed to showcase chess books. With its minimalist design and straightforward interface, BooklyApp provides chess enthusiasts with easy access to a curated collection of chess literature.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Book Catalog:** Browse through a curated catalog of chess books, showcasing titles from various authors and publishers.
+- **Book Details:** View detailed information about each book, including the author, publication date, and a brief description.
+- **Search Functionality:** Quickly find specific books using the search feature, allowing users to easily locate titles of interest.
+- **User-Friendly UI:** Enjoy a clean and intuitive user interface designed for simplicity and ease of use.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
