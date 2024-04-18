@@ -1,4 +1,4 @@
-# BooklyApp
+# Chessly
 
 BooklyApp is a simple application designed to showcase chess books. With its minimalist design and straightforward interface, BooklyApp provides chess enthusiasts with easy access to a curated collection of chess literature.
 
